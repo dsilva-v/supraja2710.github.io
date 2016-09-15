@@ -15,7 +15,8 @@
 <script>
 
 function a(){
- var name=location.href.split('=');
+ var uri=decodeURI(location.href);
+ var name=uri.split('=');
  
  var name1=name[1].split('+');
  
