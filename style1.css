@@ -1,0 +1,23 @@
+
+  
+ form{
+	 width:600px;
+	 margin: 0 auto;
+	 position:relative;
+	 top: 250px;
+ }
+ p{
+	 font-size:20px;
+ }
+ input[type="text"]{
+	width: 410px;
+	height: 40px;
+ }
+ input[type="submit"]{
+	 width: 100px;
+	 height:30px;
+	 position: relative;
+	 left:150px;
+	 font-size:20px;
+	 }
+ 

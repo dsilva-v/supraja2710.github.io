@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add a title</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body onload="a()">
+
+<audio src="hbd.mp3" autoplay>
+</audio>
+<p id="demo"></p>
+<script>
+
+function a(){
+ var name=location.href.split('=');
+ 
+ var name1=name[1].split('+');
+ 
+ var bdayname=name1.join(" ");
+ 
+ 
+ 
+  document.getElementById("demo").innerHTML="Happy Birthday " +bdayname+ "!&#x263A";
+
+}
+</script>
+</body>
+</html>
