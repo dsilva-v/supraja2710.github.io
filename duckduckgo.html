@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DuckDuck Go</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body style="background-color:#99c2ff;">
+<script>
+function appendQuery() {
+var unmod_query=document.getElementById("name").value;
+if(unmod_query.length<1){
+window.alert("Enter a valid string");
+document.getElementById("name");
+}
+else
+{
+var mod_query= unmod_query.trim().split(" ");
+for(var i=0;i<mod_query.length;i++)
+var query=query+ "+" + mod_query[i];
+var url = "https://duckduckgo.com/?q=" + query + "&t=h_&ia=about";
+window.location.href=url;
+}
+}
+</script>
+
+<p>Enter your Query</p>
+<input  type="text" id="name" name="Name"><br><br>
+<input type="submit" value="submit" id="btn" onclick="appendQuery()"> 
+</body>
+</html>
