@@ -15,7 +15,8 @@ document.getElementById("name");
 else
 {
 var mod_query= unmod_query.trim().split(" ");
-for(var i=0;i<mod_query.length;i++)
+ var query=mod_query[0];
+for(var i=1;i<mod_query.length;i++)
 var query=query+ "+" + mod_query[i];
 var url = "https://duckduckgo.com/?q=" + query + "&t=h_&ia=about";
 window.location.href=url;
